@@ -1,6 +1,6 @@
 html {
   --main-bg-color: #e7eaee;
-  --border-color: #6f6f71;
+  --border-color: #4d4d4d;
   --button-color: #ffd9ee;
   --blue-color: #02c7fa;
 }
@@ -40,4 +40,26 @@ header p {
 
 .logo-icon {
   width: 40px;
+}
+
+.search-container {
+  width: 250px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  border-radius: 30px;
+  border: 1.5px solid var(--border-color);
+}
+
+.search-icon {
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
 }
