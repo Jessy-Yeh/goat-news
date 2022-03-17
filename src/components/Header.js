@@ -6,7 +6,7 @@ function Header() {
         <h1>Goat News</h1>
       </div>
       <p>Jessy Yeh / jiejun.yeh@gmail.com</p>
-      <button>Login</button>
+      <button className="login-btn">Login</button>
     </header>
   );
 }
