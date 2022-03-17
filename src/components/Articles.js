@@ -4,7 +4,7 @@ function Articles({ articles }) {
   return (
     <ul className="articles-container">
       {articles.map((article, index) => (
-        <li key={index}>
+        <li className="article" key={index}>
           <Article article={article} />
         </li>
       ))}

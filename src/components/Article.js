@@ -1,6 +1,6 @@
 function Article({ article }) {
   return (
-    <div className="article">
+    <>
       <img src={article.image} />
       <div className="article-content-container">
         <div className="article-text">
@@ -13,7 +13,7 @@ function Article({ article }) {
           <a href={article.source.url}>{article.source.name}</a>
         </p>
       </div>
-    </div>
+    </>
   );
 }
 
