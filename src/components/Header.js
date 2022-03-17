@@ -2,7 +2,7 @@ function Header() {
   return (
     <header>
       <div className="logo-container">
-        <img className="logo-icon" src="../images/logo.png"></img>
+        <img className="logo-icon" src="assets/logo.png"></img>
         <h1>Goat News</h1>
       </div>
       <p>Jessy Yeh / jiejun.yeh@gmail.com</p>
