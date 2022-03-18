@@ -5,7 +5,9 @@ function Article({ article }) {
       <div className="article-content-container">
         <div className="article-text">
           <h2>
-            <a href={article.url}>{article.title}</a>
+            <a href={article.url} target="_blank">
+              {article.title}
+            </a>
           </h2>
           <p>{article.description}</p>
         </div>
