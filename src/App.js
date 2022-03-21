@@ -9,6 +9,8 @@ function App() {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
+    if (query === "") return;
+
     axios
       .get(
         `https://gnews.io/api/v4/search?q=${query}&token=790aa44ab9e0476cbc2481efa3b06ad9&lang=en`,
@@ -21,6 +23,9 @@ function App() {
       .then((response) => {
         const articleArray = response.data.articles;
         setArticles(articleArray);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, [query]);
 
@@ -28,7 +33,14 @@ function App() {
     <>
       <Header />
       <Search setQuery={setQuery} />
-      <Articles articles={articles} />
+      {query === "" ? (
+        <div className="pageload-view">
+          <img src="assets/hello.png" />
+          <p>Search for something... </p>
+        </div>
+      ) : (
+        <Articles articles={articles} />
+      )}
     </>
   );
 }

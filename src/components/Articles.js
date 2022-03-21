@@ -12,7 +12,7 @@ function Articles({ articles }) {
       ) : (
         <div className="pageload-view">
           <img src="assets/wait.png" />
-          <p>No search content yet...</p>
+          <p>No search result...!</p>
         </div>
       )}
     </>
