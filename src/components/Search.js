@@ -11,6 +11,7 @@ function Search({ setQuery }) {
         className="search"
         placeholder="search something here..."
         onKeyUp={searchItems}
+        autoFocus
       ></input>
       <div className="search-shadow"></div>
       <img className="search-icon" src="assets/search.png" />
