@@ -5,8 +5,7 @@ function Header() {
         <img className="logo-icon" src="assets/logo.png"></img>
         <h1>Goat News</h1>
       </div>
-      <p>Jessy Yeh / jiejun.yeh@gmail.com</p>
-      <button className="login-btn">Login</button>
+      <p>jiejun.yeh@gmail.com</p>
     </header>
   );
 }
