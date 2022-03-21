@@ -88,6 +88,18 @@ header p {
   transform: translateY(-50%);
 }
 
+.pageload-view p {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.pageload-view img {
+  margin: 0 auto;
+  width: 150px;
+  margin-top: 6rem;
+}
+
 .articles-container {
   margin: 0 auto;
   max-width: 850px;
