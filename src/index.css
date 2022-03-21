@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #e7eaee;
   --border-color: #4d4d4d;
-  --button-color: #ffd9ee;
+  --shadow-color: #ffd9ee;
   --title-hover-color: #02c7fa;
   --source-color: rgb(162, 162, 162);
   --article-bg-color: white;
@@ -22,21 +22,14 @@ header {
 
 header p {
   display: none;
-}
-
-header button {
-  border: none;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-header p {
   font-size: 0.8rem;
 }
 
 .logo-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo-container h1 {
@@ -47,10 +40,6 @@ header p {
 
 .logo-icon {
   width: 40px;
-}
-
-.login-btn {
-  background: none;
 }
 
 .search-container {
@@ -74,7 +63,7 @@ header p {
   height: 30px;
   border-radius: 30px;
   border: 1.5px solid var(--border-color);
-  background-color: var(--button-color);
+  background-color: var(--shadow-color);
   position: absolute;
   top: 22px;
   z-index: -99;
@@ -128,10 +117,6 @@ header p {
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 1rem;
-}
-
-.article:nth-of-type(1) h2 {
-  /* margin-top: 10px; */
 }
 
 .article-text a:hover {
@@ -191,11 +176,11 @@ header p {
   .articles-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .article {
     flex-direction: column;
   }
   .article:nth-of-type(1) {
-    height: 300px;
     flex-direction: row;
     grid-column: 1/3;
   }
