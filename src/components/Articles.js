@@ -11,7 +11,7 @@ function Articles({ articles }) {
         </ul>
       ) : (
         <div className="pageload-view">
-          <img src="assets/wait.png" />
+          <img src="assets/wait.png" alt="no serarch result picture" />
           <p>No search result...!</p>
         </div>
       )}

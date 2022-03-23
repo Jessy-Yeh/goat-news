@@ -1,7 +1,7 @@
 function Article({ article, isMain }) {
   return (
     <li className="article">
-      <img src={article.image} />
+      <img src={article.image} alt="news picture" />
       <div className="article-content-container">
         <div className="article-text">
           <h2>

@@ -35,7 +35,7 @@ function App() {
       <Search setQuery={setQuery} />
       {query === "" ? (
         <div className="pageload-view">
-          <img src="assets/hello.png" />
+          <img src="assets/hello.png" alt="welcome picture" />
           <p>Search for something... </p>
         </div>
       ) : (
