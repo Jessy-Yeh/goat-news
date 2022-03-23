@@ -5,7 +5,7 @@ function Article({ article, isMain }) {
       <div className="article-content-container">
         <div className="article-text">
           <h2>
-            <a href={article.url} target="_blank">
+            <a href={article.url} target="_blank" rel="noreferrer">
               {article.title}
             </a>
           </h2>
