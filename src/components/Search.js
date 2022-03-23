@@ -14,7 +14,7 @@ function Search({ setQuery }) {
         autoFocus
       ></input>
       <div className="search-shadow"></div>
-      <img className="search-icon" src="assets/search.png" alt="" />
+      <img className="search-icon" src="assets/search.png" alt="search" />
     </div>
   );
 }
